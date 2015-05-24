@@ -75,9 +75,9 @@ public class ArrayOps {
       case LONG:
         return ((long[])array)[idx];
       case FLOAT:
-        return Float.floatToIntBits(((float[])array)[idx]);
+        return Float.floatToRawIntBits(((float[])array)[idx]);
       case DOUBLE:
-        return Double.doubleToLongBits(((double[])array)[idx]);
+        return Double.doubleToRawLongBits(((double[])array)[idx]);
       default:
         throw new RuntimeException("Incorrect tag");
     }
