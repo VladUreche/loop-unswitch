@@ -1,27 +1,14 @@
-[H[2Jopenjdk version "1.7.0-internal-debug"
++ clear
+[H[2J+ java -version
+openjdk version "1.7.0-internal-debug"
 OpenJDK Runtime Environment (build 1.7.0-internal-debug-sun_2013_01_22_14_19-b00)
 OpenJDK 64-Bit Server VM (build 24.0-b29-jvmg, mixed mode)
++ java -Xms2g -Xmx2g -Xss4m -XX:-TieredCompilation -server Test
 Testing array performance:
  * int array reverse
      -> reverse took 22 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
@@ -32,71 +19,88 @@ Testing array performance:
      -> reverse took 2 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
  * miniboxed array reverse (before hitting double)
-     -> reverse took 168 ms (tag = 4)
-     -> reverse took 25 ms (tag = 4)
+     -> reverse took 186 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
-     -> reverse took 25 ms (tag = 4)
+     -> reverse took 27 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
-     -> reverse took 25 ms (tag = 4)
-     -> reverse took 25 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
      -> reverse took 25 ms (tag = 4)
      -> reverse took 25 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 6 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
+     -> reverse took 24 ms (tag = 4)
+     -> reverse took 24 ms (tag = 4)
+     -> reverse took 24 ms (tag = 4)
      -> reverse took 4 ms (tag = 4)
      -> reverse took 4 ms (tag = 4)
+     -> reverse took 4 ms (tag = 4)
+     -> reverse took 4 ms (tag = 4)
+     -> reverse took 4 ms (tag = 4)
+     -> reverse took 4 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
+     -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
  * miniboxed array reverse (after hitting double)
-     -> reverse took 0 ms (tag = 7)
-     -> reverse took 1 ms (tag = 6)
+     -> reverse took 1 ms (tag = 7)
+     -> reverse took 0 ms (tag = 6)
      -> reverse took 25 ms (tag = 4)
      -> reverse took 25 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
      -> reverse took 25 ms (tag = 4)
+     -> reverse took 25 ms (tag = 4)
+     -> reverse took 25 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
+     -> reverse took 50 ms (tag = 4)
      -> reverse took 48 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
      -> reverse took 48 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
      -> reverse took 48 ms (tag = 4)
      -> reverse took 48 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
++ echo -e '\n\n\nWith diagnostics:\n\n\n'
 
 
 
@@ -104,10 +108,11 @@ With diagnostics:
 
 
 
++ java -Xms2g -Xmx2g -Xss4m -XX:-TieredCompilation -XX:+PrintCompilation -XX:+PrintInlining -XX:+TraceLoopOpts -XX:+TraceDeoptimization -server Test
 Testing array performance:
  * int array reverse
-   1235    1             IntArrayBuffer::append (79 bytes)
-   1236    2 %           Test::testIntArrayReverse @ 12 (105 bytes)
+   1254    1             IntArrayBuffer::append (79 bytes)
+   1255    2 %           Test::testIntArrayReverse @ 12 (105 bytes)
                             x@ 59   java.lang.System::arraycopy (0 bytes)   (intrinsic)
                             x@ 75   IntArrayBuffer::append (79 bytes)   too big
 Loop: N0/N0 
@@ -127,7 +132,7 @@ Loop: N0/N0
                             x@ 40   java.lang.System::currentTimeMillis (0 bytes)   (intrinsic)
                             x@ 47   IntArrayBuffer::reverse (56 bytes)   too big
                             x@ 50   java.lang.System::currentTimeMillis (0 bytes)   (intrinsic)
-   1347    3 %           IntArrayBuffer::reverse @ 7 (56 bytes)
+   1368    3 %           IntArrayBuffer::reverse @ 7 (56 bytes)
 Loop: N0/N0 
   Loop: N271/N257  limit_check predicated
 Peel           Loop: N271/N257  limit_check predicated
@@ -138,41 +143,41 @@ Counted        Loop: N414/N341  counted [int,int),+1 (-1 iters)
 Parallel IV: 400   Loop: N414/N341  counted [int,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N414/N341  counted [int,int),+1 (-1 iters) 
-PreMainPost    Loop: N414/N341  counted [int,int),+1 (15493 iters) 
-RangeCheck     Loop: N414/N341  counted [int,int),+1 (15493 iters)  main
-Unroll 2       Loop: N414/N341  counted [int,int),+1 (15493 iters)  main
+PreMainPost    Loop: N414/N341  counted [int,int),+1 (15487 iters) 
+RangeCheck     Loop: N414/N341  counted [int,int),+1 (15487 iters)  main
+Unroll 2       Loop: N414/N341  counted [int,int),+1 (15487 iters)  main
 Loop: N0/N0 
   Loop: N484/N483  counted [int,int),+1 (4 iters)  pre
-  Loop: N552/N341  counted [int,int),+2 (15493 iters)  main
+  Loop: N552/N341  counted [int,int),+2 (15487 iters)  main
   Loop: N440/N439  counted [int,int),+1 (4 iters)  post
-Unroll 4       Loop: N552/N341  counted [int,int),+2 (15493 iters)  main
+Unroll 4       Loop: N552/N341  counted [int,int),+2 (15487 iters)  main
 Loop: N0/N0 
   Loop: N484/N483  counted [int,int),+1 (4 iters)  pre
-  Loop: N649/N341  counted [int,int),+4 (15493 iters)  main
+  Loop: N649/N341  counted [int,int),+4 (15487 iters)  main
   Loop: N440/N439  counted [int,int),+1 (4 iters)  post
-Unroll 8       Loop: N649/N341  counted [int,int),+4 (15493 iters)  main
+Unroll 8       Loop: N649/N341  counted [int,int),+4 (15487 iters)  main
 Loop: N0/N0 
   Loop: N484/N483  counted [int,int),+1 (4 iters)  pre
-  Loop: N714/N341  counted [int,int),+8 (15493 iters)  main
+  Loop: N714/N341  counted [int,int),+8 (15487 iters)  main
   Loop: N440/N439  counted [int,int),+1 (4 iters)  post
-Unroll 16       Loop: N714/N341  counted [int,int),+8 (15493 iters)  main
+Unroll 16       Loop: N714/N341  counted [int,int),+8 (15487 iters)  main
 Loop: N0/N0 
   Loop: N484/N483  counted [int,int),+1 (4 iters)  pre
-  Loop: N797/N341  counted [int,int),+16 (15493 iters)  main
+  Loop: N797/N341  counted [int,int),+16 (15487 iters)  main
   Loop: N440/N439  counted [int,int),+1 (4 iters)  post
-Uncommon trap occurred in Test::testIntArrayReverse (@0x00007fe9208c6348) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=17 unresolved class: java/lang/StringBuilder
-   1369    2 %           Test::testIntArrayReverse @ -2 (105 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe928640830 unextended sp=0x00007fe928640830, fp=0x00000000faaaf3ef, pc=0x00007fe9208c6348)
-     nmethod   1369    2 %           Test::testIntArrayReverse @ -2 (105 bytes)
+Uncommon trap occurred in Test::testIntArrayReverse (@0x00007f7b89102348) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=17 unresolved class: java/lang/StringBuilder
+   1390    2 %           Test::testIntArrayReverse @ -2 (105 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b42830 unextended sp=0x00007f7b92b42830, fp=0x00000000faaaf3ef, pc=0x00007f7b89102348)
+     nmethod   1390    2 %           Test::testIntArrayReverse @ -2 (105 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe928640830, unextended_sp=0x00007fe928640830, fp=0x00000000faaaf3ef, pc=0x00007fe9208c6348)
+        0 - frame( sp=0x00007f7b92b42830, unextended_sp=0x00007f7b92b42830, fp=0x00000000faaaf3ef, pc=0x00007f7b89102348)
 Test.testIntArrayReverse(Test.java:40) - new @ bci 58 
-     Created vframeArray 0x00007fe924175f78
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924175f78 mode 2
-     {method} 'testIntArrayReverse' '(BJII)V' in 'Test' - new @ bci 58 sp = 0x00007fe928640810
+     Created vframeArray 0x00007f7b8c17dfa8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c17dfa8 mode 2
+     {method} 'testIntArrayReverse' '(BJII)V' in 'Test' - new @ bci 58 sp = 0x00007f7b92b42810
      -> reverse took 22 ms (tag = 4)
-   1369    4             IntArrayBuffer::reverse (56 bytes)
+   1391    4             IntArrayBuffer::reverse (56 bytes)
 Loop: N0/N0 
   Loop: N218/N207  limit_check predicated
 Predicate IC   Loop: N218/N207  limit_check predicated
@@ -183,45 +188,33 @@ Counted        Loop: N316/N232  counted [0,int),+1 (-1 iters)
 Parallel IV: 296   Loop: N316/N232  counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N316/N232  counted [0,int),+1 (-1 iters) 
-PreMainPost    Loop: N316/N232  counted [0,int),+1 (479231 iters) 
-     -> reverse took 3 ms (tag = 4)
-RangeCheck     Loop: N316/N232  counted [int,int),+1 (479231 iters)  main
-Unroll 2       Loop: N316/N232  counted [int,int),+1 (479231 iters)  main
+     -> reverse took 3 ms (tag = 4)PreMainPost    Loop: N316/N232  counted [0,int),+1 (492543 iters) 
+RangeCheck     Loop: N316/N232  counted [int,int),+1 (492543 iters)  main
+Unroll 2       Loop: N316/N232  counted [int,int),+1 (492543 iters)  main
 Loop: N0/N0 
   Loop: N379/N387  counted [0,int),+1 (4 iters)  pre
-  Loop: N447/N232  counted [int,int),+2 (479231 iters)  main
+  Loop: N447/N232  counted [int,int),+2 (492543 iters)  main
   Loop: N334/N342  counted [int,int),+1 (4 iters)  post
-Unroll 4       Loop: N447/N232  counted [int,int),+2 (479231 iters)  main
+Unroll 4       Loop: N447/N232  counted [int,int),+2 (492543 iters)  main
      -> reverse took 2 ms (tag = 4)
 Loop: N0/N0 
   Loop: N379/N387  counted [0,int),+1 (4 iters)  pre
-  Loop: N531/N232  counted [int,int),+4 (479231 iters)  main
+  Loop: N531/N232  counted [int,int),+4 (492543 iters)  main
   Loop: N334/N342  counted [int,int),+1 (4 iters)  post
-Unroll 8       Loop: N531/N232  counted [int,int),+4 (479231 iters)  main
+Unroll 8       Loop: N531/N232  counted [int,int),+4 (492543 iters)  main
 Loop: N0/N0 
   Loop: N379/N387  counted [0,int),+1 (4 iters)  pre
-  Loop: N584/N232  counted [int,int),+8 (479231 iters)  main
+  Loop: N584/N232  counted [int,int),+8 (492543 iters)  main
   Loop: N334/N342  counted [int,int),+1 (4 iters)  post
-Unroll 16       Loop: N584/N232  counted [int,int),+8 (479231 iters)  main
+Unroll 16       Loop: N584/N232  counted [int,int),+8 (492543 iters)  main
 Loop: N0/N0 
   Loop: N379/N387  counted [0,int),+1 (4 iters)  pre
-  Loop: N661/N232  counted [int,int),+16 (479231 iters)  main
+  Loop: N661/N232  counted [int,int),+16 (492543 iters)  main
   Loop: N334/N342  counted [int,int),+1 (4 iters)  post
      -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
-     -> reverse took 3 ms (tag = 4)
-     -> reverse took 2 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
@@ -231,17 +224,28 @@ Loop: N0/N0
      -> reverse took 2 ms (tag = 4)
      -> reverse took 2 ms (tag = 4)
      -> reverse took 3 ms (tag = 4)
-     -> reverse took 4 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 4 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 3 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
+     -> reverse took 2 ms (tag = 4)
  * miniboxed array reverse (before hitting double)
-   1451    5             MiniboxedArrayBuffer::append (89 bytes)
-   1451    6             ArrayOps::array_update (153 bytes)
+   1463    5             MiniboxedArrayBuffer::append (89 bytes)
+   1463    6             ArrayOps::array_update (153 bytes)
                             x@ 24   ArrayOps::array_update (153 bytes)   inline (hot)
                             x@ 52   ArrayOps::array_new (90 bytes)   too big
                             x@ 69   java.lang.System::arraycopy (0 bytes)   (intrinsic)
                             x@ 85   MiniboxedArrayBuffer::append (89 bytes)   too big
-   1462    7 %           Test::testMboxedArrayReverse @ 13 (106 bytes)
+   1474    7 %           Test::testMboxedArrayReverse @ 13 (106 bytes)
 Counted        Loop: N1134/N1078  limit_check predicated counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N1127/N742  limit_check predicated
@@ -279,8 +283,8 @@ Loop: N0/N0
                             x@ 90   java.lang.StringBuilder::append (8 bytes)   call site not reached
                             x@ 93   java.lang.StringBuilder::toString (17 bytes)   executed < MinInliningThreshold times
                !m           x@ 96   java.io.PrintStream::println (24 bytes)   executed < MinInliningThreshold times
-   1591    8             ArrayOps::array_get (155 bytes)
-   1594    9 %           MiniboxedArrayBuffer::reverse @ 7 (76 bytes)
+   1606    8             ArrayOps::array_get (155 bytes)
+   1609    9 %           MiniboxedArrayBuffer::reverse @ 7 (76 bytes)
 Loop: N0/N0 
   Loop: N2203/N2065  limit_check predicated
 Loop: N0/N0 
@@ -296,71 +300,74 @@ Loop: N0/N0
                             x@ 34   ArrayOps::array_get (155 bytes)   inline (hot)
                             x@ 50   ArrayOps::array_update (153 bytes)   inline (hot)
                             x@ 63   ArrayOps::array_update (153 bytes)   inline (hot)
-     -> reverse took 170 ms (tag = 4)
-   1760   10             MiniboxedArrayBuffer::reverse (76 bytes)
+     -> reverse took 183 ms (tag = 4)
+   1789   10             MiniboxedArrayBuffer::reverse (76 bytes)
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N2155/N2013  limit_check predicated
 Unswitch   1   Loop: N2155/N2013  limit_check predicated
-     -> reverse took 25 ms (tag = 4)
 Loop: N0/N0 
   Loop: N2508/N2507  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 Predicate IC   Loop: N2508/N2507  limit_check predicated
 Predicate IC   Loop: N2508/N2507  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N2508/N2507  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 PartialPeel    Loop: N2508/N2507  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Counted        Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
-     -> reverse took 25 ms (tag = 4)Parallel IV: 4261   Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
-
+Parallel IV: 4261   Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
+Loop: N0/N0 
+  Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
+  Loop: N2155/N2013  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
   Loop: N2155/N2013  limit_check predicated
-Loop: N0/N0 
-  Loop: N4438/N3473  counted [0,int),+1 (-1 iters) 
-  Loop: N2155/N2013  limit_check predicated
-PreMainPost    Loop: N4438/N3473  counted [0,int),+1 (1116159 iters) 
-RangeCheck     Loop: N4438/N3473  counted [int,int),+1 (1116159 iters)  main
-Unroll 2       Loop: N4438/N3473  counted [int,int),+1 (1116159 iters)  main
+PreMainPost    Loop: N4438/N3473  counted [0,int),+1 (1150975 iters) 
+RangeCheck     Loop: N4438/N3473  counted [int,int),+1 (1150975 iters)  main
+Unroll 2       Loop: N4438/N3473  counted [int,int),+1 (1150975 iters)  main
 Unswitch   2   Loop: N2155/N2013  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N4635/N3473  counted [int,int),+2 (1116159 iters)  main
+  Loop: N4635/N3473  counted [int,int),+2 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
-     -> reverse took 25 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N4635/N3473  counted [int,int),+2 (1116159 iters)  main
+  Loop: N4635/N3473  counted [int,int),+2 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
-Unroll 4       Loop: N4635/N3473  counted [int,int),+2 (1116159 iters)  main
+Unroll 4       Loop: N4635/N3473  counted [int,int),+2 (1150975 iters)  main
 Peel           Loop: N4954/N4953  limit_check predicated
 Unswitch   3   Loop: N2155/N2013  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
-  Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
-  Loop: N4954/N4953 
-  Loop: N6191/N6190  limit_check predicated
-  Loop: N2155/N2013  limit_check predicated
-     -> reverse took 24 ms (tag = 4)
-Loop: N0/N0 
-  Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
+  Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
+  Loop: N4954/N4953 
+  Loop: N6191/N6190  limit_check predicated
+  Loop: N2155/N2013  limit_check predicated
+Loop: N0/N0 
+  Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
@@ -369,30 +376,31 @@ Predicate IC   Loop: N6191/N6190  limit_check predicated
 Predicate IC   Loop: N6191/N6190  limit_check predicated
 Predicate IC   Loop: N2155/N2013  limit_check predicated
 Predicate IC   Loop: N2155/N2013  limit_check predicated
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
@@ -401,7 +409,7 @@ Predicate IC   Loop: N2155/N2013  limit_check predicated
 Predicate IC   Loop: N2155/N2013  limit_check predicated
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N4954/N4953 
   Loop: N6191/N6190  limit_check predicated
@@ -411,72 +419,74 @@ Counted        Loop: N6944/N6842  counted [1,int),+1 (-1 iters)
 Parallel IV: 6917   Loop: N6944/N6842  counted [1,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N6944/N6842  counted [1,int),+1 (-1 iters) 
   Loop: N6191/N6190  limit_check predicated
   Loop: N2155/N2013  limit_check predicated
-PreMainPost    Loop: N6944/N6842  counted [1,int),+1 (1116159 iters) 
-RangeCheck     Loop: N6944/N6842  counted [int,int),+1 (1116159 iters)  main
-Unroll 2       Loop: N6944/N6842  counted [int,int),+1 (1116159 iters)  main
+PreMainPost    Loop: N6944/N6842  counted [1,int),+1 (1150975 iters) 
+RangeCheck     Loop: N6944/N6842  counted [int,int),+1 (1150975 iters)  main
+Unroll 2       Loop: N6944/N6842  counted [int,int),+1 (1150975 iters)  main
 PartialPeel    Loop: N6191/N6190  limit_check predicated
-     -> reverse took 36 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
 Counted        Loop: N7309/N7166  counted [0,int),+1 (-1 iters) 
 Parallel IV: 7245   Loop: N7309/N7166  counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N7038/N7046  counted [1,int),+1 (4 iters)  pre
-  Loop: N7124/N6842  counted [int,int),+2 (1116159 iters)  main
+  Loop: N7124/N6842  counted [int,int),+2 (1150975 iters)  main
   Loop: N6976/N6984  counted [int,int),+1 (4 iters)  post
   Loop: N7309/N7166  counted [0,int),+1 (-1 iters) 
   Loop: N2155/N2013  limit_check predicated
-Unroll 4       Loop: N7124/N6842  counted [int,int),+2 (1116159 iters)  main
-PreMainPost    Loop: N7309/N7166  counted [0,int),+1 (1116159 iters) 
-RangeCheck     Loop: N7309/N7166  counted [int,int),+1 (1116159 iters)  main
-Unroll 2       Loop: N7309/N7166  counted [int,int),+1 (1116159 iters)  main
+Unroll 4       Loop: N7124/N6842  counted [int,int),+2 (1150975 iters)  main
+PreMainPost    Loop: N7309/N7166  counted [0,int),+1 (1150975 iters) 
+RangeCheck     Loop: N7309/N7166  counted [int,int),+1 (1150975 iters)  main
+Unroll 2       Loop: N7309/N7166  counted [int,int),+1 (1150975 iters)  main
 PartialPeel    Loop: N2155/N2013  limit_check predicated
 Counted        Loop: N7808/N7604  counted [0,int),+1 (-1 iters) 
 Parallel IV: 7713   Loop: N7808/N7604  counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N7038/N7046  counted [1,int),+1 (4 iters)  pre
-  Loop: N7367/N6842  counted [int,int),+4 (1116159 iters)  main
+  Loop: N7367/N6842  counted [int,int),+4 (1150975 iters)  main
   Loop: N6976/N6984  counted [int,int),+1 (4 iters)  post
   Loop: N7473/N7481  counted [0,int),+1 (4 iters)  pre
-  Loop: N7560/N7166  counted [int,int),+2 (1116159 iters)  main
+  Loop: N7560/N7166  counted [int,int),+2 (1150975 iters)  main
   Loop: N7410/N7418  counted [int,int),+1 (4 iters)  post
   Loop: N7808/N7604  counted [0,int),+1 (-1 iters) 
-Unroll 4       Loop: N7560/N7166  counted [int,int),+2 (1116159 iters)  main
-PreMainPost    Loop: N7808/N7604  counted [0,int),+1 (1116159 iters) 
-RangeCheck     Loop: N7808/N7604  counted [int,int),+1 (1116159 iters)  main
-Unroll 2       Loop: N7808/N7604  counted [int,int),+1 (1116159 iters)  main
+Unroll 4       Loop: N7560/N7166  counted [int,int),+2 (1150975 iters)  main
+PreMainPost    Loop: N7808/N7604  counted [0,int),+1 (1150975 iters) 
+RangeCheck     Loop: N7808/N7604  counted [int,int),+1 (1150975 iters)  main
+Unroll 2       Loop: N7808/N7604  counted [int,int),+1 (1150975 iters)  main
+     -> reverse took 26 ms (tag = 4)
 Loop: N0/N0 
   Loop: N4546/N4554  counted [0,int),+1 (4 iters)  pre
-  Loop: N5825/N3473  counted [int,int),+4 (1116159 iters)  main
+  Loop: N5825/N3473  counted [int,int),+4 (1150975 iters)  main
   Loop: N4483/N4491  counted [int,int),+1 (4 iters)  post
   Loop: N7038/N7046  counted [1,int),+1 (4 iters)  pre
-  Loop: N7367/N6842  counted [int,int),+4 (1116159 iters)  main
+  Loop: N7367/N6842  counted [int,int),+4 (1150975 iters)  main
   Loop: N6976/N6984  counted [int,int),+1 (4 iters)  post
   Loop: N7473/N7481  counted [0,int),+1 (4 iters)  pre
-  Loop: N7866/N7166  counted [int,int),+4 (1116159 iters)  main
+  Loop: N7866/N7166  counted [int,int),+4 (1150975 iters)  main
   Loop: N7410/N7418  counted [int,int),+1 (4 iters)  post
   Loop: N8016/N8015  counted [0,int),+1 (4 iters)  pre
-  Loop: N8126/N7604  counted [int,int),+2 (1116159 iters)  main
+  Loop: N8126/N7604  counted [int,int),+2 (1150975 iters)  main
   Loop: N7930/N7929  counted [int,int),+1 (4 iters)  post
-     -> reverse took 25 ms (tag = 4)
                             x@ 21   ArrayOps::array_get (155 bytes)   inline (hot)
                             x@ 34   ArrayOps::array_get (155 bytes)   inline (hot)
                             x@ 50   ArrayOps::array_update (153 bytes)   inline (hot)
                             x@ 63   ArrayOps::array_update (153 bytes)   inline (hot)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
+     -> reverse took 25 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+     -> reverse took 25 ms (tag = 4)
+     -> reverse took 25 ms (tag = 4)
      -> reverse took 24 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
+     -> reverse took 6 ms (tag = 4)
      -> reverse took 6 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
@@ -484,89 +494,82 @@ Loop: N0/N0
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
-     -> reverse took 5 ms (tag = 4)
+     -> reverse took 6 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
      -> reverse took 5 ms (tag = 4)
  * miniboxed array reverse (after hitting double)
-   2095   11             Test::testMboxedArrayReverse (106 bytes)
-Uncommon trap occurred in MiniboxedArrayBuffer::append (@0x00007fe9208c7a44) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=66 unresolved class: java/lang/Double
-   2095    5             MiniboxedArrayBuffer::append (89 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe9286407b0 unextended sp=0x00007fe9286407b0, fp=0x00000007d5ebd420, pc=0x00007fe9208c7a44)
-     nmethod   2095    5             MiniboxedArrayBuffer::append (89 bytes)
+   2273   11             Test::testMboxedArrayReverse (106 bytes)
+Uncommon trap occurred in MiniboxedArrayBuffer::append (@0x00007f7b89103a44) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=66 unresolved class: java/lang/Double
+   2273    5             MiniboxedArrayBuffer::append (89 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b427b0 unextended sp=0x00007f7b92b427b0, fp=0x00000007d5ebd420, pc=0x00007f7b89103a44)
+     nmethod   2273    5             MiniboxedArrayBuffer::append (89 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe9286407b0, unextended_sp=0x00007fe9286407b0, fp=0x00000007d5ebd420, pc=0x00007fe9208c7a44)
+        0 - frame( sp=0x00007f7b92b427b0, unextended_sp=0x00007f7b92b427b0, fp=0x00000007d5ebd420, pc=0x00007f7b89103a44)
 ArrayOps.array_update(ArrayOps.java:120) - invokestatic @ bci 138 
-        1 - frame( sp=0x00007fe9286407b0, unextended_sp=0x00007fe9286407b0, fp=0x00000007d5ebd420, pc=0x00007fe9208c7a44)
+        1 - frame( sp=0x00007f7b92b427b0, unextended_sp=0x00007f7b92b427b0, fp=0x00000007d5ebd420, pc=0x00007f7b89103a44)
 MiniboxedArrayBuffer.append(MiniboxedArrayBuffer.java:18) - invokestatic @ bci 24 
-     Created vframeArray 0x00007fe924178148
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924178148 mode 2
-     {method} 'append' '(J)V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 24 sp = 0x00007fe928640768
-     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 138 sp = 0x00007fe9286406f8
-Uncommon trap occurred in ArrayOps::array_update (@0x00007fe9208c8a18) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=66
-   2096    6             ArrayOps::array_update (153 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe928640740 unextended sp=0x00007fe928640740, fp=0x00000007d5ebd420, pc=0x00007fe9208c8a18)
-     nmethod   2096    6             ArrayOps::array_update (153 bytes)
+     Created vframeArray 0x00007f7b8c1801e8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c1801e8 mode 2
+     {method} 'append' '(J)V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 24 sp = 0x00007f7b92b42768
+     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 138 sp = 0x00007f7b92b426f8
+Uncommon trap occurred in ArrayOps::array_update (@0x00007f7b89104a18) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=66
+   2274    6             ArrayOps::array_update (153 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b42740 unextended sp=0x00007f7b92b42740, fp=0x00000007d5ebd420, pc=0x00007f7b89104a18)
+     nmethod   2274    6             ArrayOps::array_update (153 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe928640740, unextended_sp=0x00007fe928640740, fp=0x00000007d5ebd420, pc=0x00007fe9208c8a18)
+        0 - frame( sp=0x00007f7b92b42740, unextended_sp=0x00007f7b92b42740, fp=0x00000007d5ebd420, pc=0x00007f7b89104a18)
 ArrayOps.array_update(ArrayOps.java:120) - invokestatic @ bci 138 
-     Created vframeArray 0x00007fe924175f78
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924175f78 mode 2
-     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 138 sp = 0x00007fe928640700
-Uncommon trap occurred in MiniboxedArrayBuffer::reverse (@0x00007fe9208d5288) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=66
-   2096   10             MiniboxedArrayBuffer::reverse (76 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe9286407c0 unextended sp=0x00007fe9286407c0, fp=0x00000000000003e8, pc=0x00007fe9208d5288)
-     nmethod   2096   10             MiniboxedArrayBuffer::reverse (76 bytes)
+     Created vframeArray 0x00007f7b8c17dfa8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c17dfa8 mode 2
+     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 138 sp = 0x00007f7b92b42700
+Uncommon trap occurred in MiniboxedArrayBuffer::reverse (@0x00007f7b89111288) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=66
+   2274   10             MiniboxedArrayBuffer::reverse (76 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b427c0 unextended sp=0x00007f7b92b427c0, fp=0x00000000000003e8, pc=0x00007f7b89111288)
+     nmethod   2274   10             MiniboxedArrayBuffer::reverse (76 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe9286407c0, unextended_sp=0x00007fe9286407c0, fp=0x00000000000003e8, pc=0x00007fe9208d5288)
+        0 - frame( sp=0x00007f7b92b427c0, unextended_sp=0x00007f7b92b427c0, fp=0x00000000000003e8, pc=0x00007f7b89111288)
 ArrayOps.array_get(ArrayOps.java:80) - invokestatic @ bci 141 
-        1 - frame( sp=0x00007fe9286407c0, unextended_sp=0x00007fe9286407c0, fp=0x00000000000003e8, pc=0x00007fe9208d5288)
+        1 - frame( sp=0x00007f7b92b427c0, unextended_sp=0x00007f7b92b427c0, fp=0x00000000000003e8, pc=0x00007f7b89111288)
 MiniboxedArrayBuffer.reverse(MiniboxedArrayBuffer.java:36) - invokestatic @ bci 21 
-     Created vframeArray 0x00007fe924178148
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924178148 mode 2
-     {method} 'reverse' '()V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 21 sp = 0x00007fe928640768
-     {method} 'array_get' '(BLjava/lang/Object;I)J' in 'ArrayOps' - invokestatic @ bci 141 sp = 0x00007fe928640708
-Uncommon trap occurred in ArrayOps::array_get (@0x00007fe9208cae34) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=66
-   2097    8             ArrayOps::array_get (155 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe928640730 unextended sp=0x00007fe928640730, fp=0x00007fe9286407c0, pc=0x00007fe9208cae34)
-     nmethod   2097    8             ArrayOps::array_get (155 bytes)
+     Created vframeArray 0x00007f7b8c1801e8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c1801e8 mode 2
+     {method} 'reverse' '()V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 21 sp = 0x00007f7b92b42768
+     {method} 'array_get' '(BLjava/lang/Object;I)J' in 'ArrayOps' - invokestatic @ bci 141 sp = 0x00007f7b92b42708
+Uncommon trap occurred in ArrayOps::array_get (@0x00007f7b89106e34) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=66
+   2275    8             ArrayOps::array_get (155 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b42730 unextended sp=0x00007f7b92b42730, fp=0x00007f7b92b427c0, pc=0x00007f7b89106e34)
+     nmethod   2275    8             ArrayOps::array_get (155 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe928640730, unextended_sp=0x00007fe928640730, fp=0x00007fe9286407c0, pc=0x00007fe9208cae34)
+        0 - frame( sp=0x00007f7b92b42730, unextended_sp=0x00007f7b92b42730, fp=0x00007f7b92b427c0, pc=0x00007f7b89106e34)
 ArrayOps.array_get(ArrayOps.java:80) - invokestatic @ bci 141 
-     Created vframeArray 0x00007fe924175f78
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924175f78 mode 2
-     {method} 'array_get' '(BLjava/lang/Object;I)J' in 'ArrayOps' - invokestatic @ bci 141 sp = 0x00007fe928640700
-     -> reverse took 1 ms (tag = 7)
-Uncommon trap occurred in Test::testMboxedArrayReverse (@0x00007fe9208cd6f8) thread=140639381755648 reason=unloaded action=reinterpret unloaded_class_index=64
-   2098    7 %           Test::testMboxedArrayReverse @ -2 (106 bytes)   made not entrant
-DEOPT PACKING thread 0x00007fe92400c800 Compiled frame (sp=0x00007fe928640830 unextended sp=0x00007fe928640830, fp=0x00000007d5ec1a50, pc=0x00007fe9208cd6f8)
-     nmethod   2098    7 %           Test::testMboxedArrayReverse @ -2 (106 bytes)
+     Created vframeArray 0x00007f7b8c17dfa8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c17dfa8 mode 2
+     {method} 'array_get' '(BLjava/lang/Object;I)J' in 'ArrayOps' - invokestatic @ bci 141 sp = 0x00007f7b92b42700
+     -> reverse took 2 ms (tag = 7)
+Uncommon trap occurred in Test::testMboxedArrayReverse (@0x00007f7b891096f8) thread=140168718989056 reason=unloaded action=reinterpret unloaded_class_index=64
+   2276    7 %           Test::testMboxedArrayReverse @ -2 (106 bytes)   made not entrant
+DEOPT PACKING thread 0x00007f7b8c00c800 Compiled frame (sp=0x00007f7b92b42830 unextended sp=0x00007f7b92b42830, fp=0x00000007d5ec1a50, pc=0x00007f7b891096f8)
+     nmethod   2276    7 %           Test::testMboxedArrayReverse @ -2 (106 bytes)
 
      Virtual frames (innermost first):
-        0 - frame( sp=0x00007fe928640830, unextended_sp=0x00007fe928640830, fp=0x00000007d5ec1a50, pc=0x00007fe9208cd6f8)
+        0 - frame( sp=0x00007f7b92b42830, unextended_sp=0x00007f7b92b42830, fp=0x00000007d5ec1a50, pc=0x00007f7b891096f8)
 ArrayOps.array_update(ArrayOps.java:117) - invokestatic @ bci 124 
-        1 - frame( sp=0x00007fe928640830, unextended_sp=0x00007fe928640830, fp=0x00000007d5ec1a50, pc=0x00007fe9208cd6f8)
+        1 - frame( sp=0x00007f7b92b42830, unextended_sp=0x00007f7b92b42830, fp=0x00000007d5ec1a50, pc=0x00007f7b891096f8)
 MiniboxedArrayBuffer.append(MiniboxedArrayBuffer.java:18) - invokestatic @ bci 24 
-        2 - frame( sp=0x00007fe928640830, unextended_sp=0x00007fe928640830, fp=0x00000007d5ec1a50, pc=0x00007fe9208cd6f8)
+        2 - frame( sp=0x00007f7b92b42830, unextended_sp=0x00007f7b92b42830, fp=0x00000007d5ec1a50, pc=0x00007f7b891096f8)
 Test.testMboxedArrayReverse(Test.java:50) - invokevirtual @ bci 22 
-     Created vframeArray 0x00007fe924178148
-DEOPT UNPACKING thread 0x00007fe92400c800 vframeArray 0x00007fe924178148 mode 2
-     {method} 'testMboxedArrayReverse' '(BJII)V' in 'Test' - invokevirtual @ bci 22 sp = 0x00007fe9286407f0
-     {method} 'append' '(J)V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 24 sp = 0x00007fe928640778
-     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 124 sp = 0x00007fe928640710
-     -> reverse took 1 ms (tag = 6)
-   2101   12             ArrayOps::array_update (153 bytes)
+     Created vframeArray 0x00007f7b8c1801e8
+DEOPT UNPACKING thread 0x00007f7b8c00c800 vframeArray 0x00007f7b8c1801e8 mode 2
+     {method} 'testMboxedArrayReverse' '(BJII)V' in 'Test' - invokevirtual @ bci 22 sp = 0x00007f7b92b427f0
+     {method} 'append' '(J)V' in 'MiniboxedArrayBuffer' - invokestatic @ bci 24 sp = 0x00007f7b92b42778
+     {method} 'array_update' '(BLjava/lang/Object;IJ)V' in 'ArrayOps' - invokestatic @ bci 124 sp = 0x00007f7b92b42710
+     -> reverse took 0 ms (tag = 6)
+   2279   12             ArrayOps::array_update (153 bytes)
 Counted        Loop: N1230/N820  limit_check predicated counted [0,int),+1 (-1 iters) 
 Counted        Loop: N1236/N1168  limit_check predicated counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
@@ -584,7 +587,7 @@ Loop: N0/N0
 Loop: N0/N0 
   Loop: N1230/N820  counted [0,int),+1 (-1 iters) 
   Loop: N1236/N1168  counted [0,int),+1 (-1 iters) 
-   2113   13             MiniboxedArrayBuffer::append (89 bytes)
+   2291   13             MiniboxedArrayBuffer::append (89 bytes)
 Loop: N0/N0 
   Loop: N1230/N820  counted [0,int),+1 (-1 iters) 
   Loop: N1236/N1168  counted [0,int),+1 (-1 iters) 
@@ -614,7 +617,7 @@ Loop: N0/N0
                             x@ 52   ArrayOps::array_new (90 bytes)   too big
                             x@ 69   java.lang.System::arraycopy (0 bytes)   (intrinsic)
                             x@ 85   MiniboxedArrayBuffer::append (89 bytes)   too big
-   2152   14 %           Test::testMboxedArrayReverse @ 13 (106 bytes)
+   2328   14 %           Test::testMboxedArrayReverse @ 13 (106 bytes)
 Counted        Loop: N707/N498  limit_check predicated counted [0,int),+1 (-1 iters) 
 Loop: N0/N0 
   Loop: N700/N151  limit_check predicated
@@ -653,17 +656,17 @@ Loop: N0/N0
                               x@ 2   java.lang.AbstractStringBuilder::append (48 bytes)   too big
                               x@ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)   inline (hot)
                                 x@ 1   java.lang.Object::<init> (1 bytes)   inline (hot)
-     -> reverse took 25 ms (tag = 4)
-   2304   15             ArrayOps::array_get (155 bytes)
+     -> reverse took 27 ms (tag = 4)
+   2488   15             ArrayOps::array_get (155 bytes)
                             x@ 141   java.lang.Double::doubleToLongBits (33 bytes)   (intrinsic)
                             x@ 127   java.lang.Float::floatToIntBits (26 bytes)   (intrinsic)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 23 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 39 ms (tag = 4)
-   2462   16             MiniboxedArrayBuffer::reverse (76 bytes)
+     -> reverse took 27 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+     -> reverse took 27 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+   2646   16             MiniboxedArrayBuffer::reverse (76 bytes)
 Loop: N0/N0 
   Loop: N1148/N1073  limit_check predicated
 Loop: N0/N0 
@@ -675,6 +678,7 @@ Loop: N0/N0
 PredicatesOff
 Loop: N0/N0 
   Loop: N1148/N1073 
+     -> reverse took 27 ms (tag = 4)
                             x@ 21   ArrayOps::array_get (155 bytes)   already compiled into a big method
                             x@ 34   ArrayOps::array_get (155 bytes)   already compiled into a big method
                             x@ 50   ArrayOps::array_update (153 bytes)   inline (hot)
@@ -683,26 +687,25 @@ Loop: N0/N0
                             x@ 63   ArrayOps::array_update (153 bytes)   inline (hot)
                               x@ 138   java.lang.Double::longBitsToDouble (0 bytes)   (intrinsic)
                               x@ 124   java.lang.Float::intBitsToFloat (0 bytes)   (intrinsic)
-     -> reverse took 25 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 24 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 60 ms (tag = 4)
-     -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
+     -> reverse took 27 ms (tag = 4)
+     -> reverse took 27 ms (tag = 4)
+     -> reverse took 26 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 53 ms (tag = 4)
+     -> reverse took 55 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 54 ms (tag = 4)
+     -> reverse took 53 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
      -> reverse took 49 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 48 ms (tag = 4)
-     -> reverse took 63 ms (tag = 4)
      -> reverse took 50 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 49 ms (tag = 4)
+     -> reverse took 48 ms (tag = 4)
